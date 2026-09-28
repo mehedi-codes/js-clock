@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Digital Clock</title>
+  <title>JS Clock</title>
   <style>
+    body {
+      display: flex;
+      justify-center: center;
+      align-items: center;
+      min-height: 100dvh;
+    }
     #clock {
       font-size: 48px;
       text-align: center;
@@ -10,10 +16,10 @@
   </style>
 </head>
 <body>
-  <div id="clock"></div>
+  <div id="js-clock"></div>
   <script>
   function updateClock() {
-  var clockElement = document.getElementById("clock");
+  var clockElement = document.getElementById("js-clock");
   var currentTime = new Date();
   
   var hours = currentTime.getHours();
